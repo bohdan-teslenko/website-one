@@ -78,7 +78,7 @@ body {
     list-style: none;
     background-color: #0a1c44;
     text-decoration: none;
-    top: 100%;
+    top: 77%;
     transform: translateX(-20%);
     display: none;
     &__item {
@@ -86,8 +86,12 @@ body {
       margin-left: -10px;
       padding-right: 1rem;
       text-align: left;
+      &:hover {
+        transition-delay: 0.2s;
+        transition: 0.3s ease-in-out;
+      }
       :nth-child(1) {
-        padding-top: 2.8rem;
+        padding-top: 2rem;
       }
     }
     &__link {
@@ -428,10 +432,9 @@ hr {
     &:hover {
       transform: scale(1.4);
       margin-left: 1rem;
-      margin-right: 1rem;
-      background-color: #003645;
-      transition: 0.4s ease-in;
-      transition-delay: 0.3s;
+      background-color: transparent;
+      transition: 0.3s ease-in;
+      transition-delay: 0.2s;
     }
   }
   &__menu {
